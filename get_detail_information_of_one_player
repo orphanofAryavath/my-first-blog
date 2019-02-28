@@ -1,0 +1,19 @@
+# Born
+# player.playerProfile.height || player.playerProfile.weight
+from selenium import webdriver
+from bs4 import BeautifulSoup
+
+# create driver
+driver = webdriver.PhantomJS(r'Z:\manas1\phantomjs.exe')
+url = 'https://in.global.nba.com/players/#!/jaylen_adams'
+driver.get(url)
+# print (driver.page_source)
+
+# create soup
+soup = BeautifulSoup(driver.page_source,'lxml')
+
+div = soup.find('div', class_ = 'player-info-right hidden-sm')
+for span in div.find('span',class_ = 'ng-binding'):
+	for height in span.findNextSibling():
+		Height = height.text()                                                                           
+print(Height)
