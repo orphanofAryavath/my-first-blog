@@ -3,5 +3,5 @@ from django.utils import timezone
 from.models import Post
 # Create your views here.
 def post_list(request):
-    posts = Post.objects.filter(published_date_ _lte = timezone.now()).order_by('pubished_date')
-    return render(request, 'blog/post_list.html', {'posts' : posts})
+    Posts = Post.objects.filter(published_date_ _lte = timezone.now()).order_by('pubished_date')
+    return render(request, 'blog/post_list.html', {'Posts' : Posts})
