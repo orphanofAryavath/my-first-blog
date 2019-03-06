@@ -1,12 +1,20 @@
 <html>
 <head>
 	<title>what the fact </title>
+<div>
 	<h1>Do you think thats world is as simple as its looks?</h1>
 	<p>there so much going in the world and have been since the beggning so just buckle up and be ready to see world from a slight a different view.</p>
 	<h1>There is no remedy for bieng stung by a Tarantula Hawk Wasp Other than "Screaming"</h1>
 	<p>it is the 2nd most painful insect sting know to man ,but the sting has no lasting effects other than 5 min of blinding,excruciating pain. all you can do is lay down and scream and hope no one films you and turns it into a meme</p>
 	<h1>Persian Soldiers Once used Cats as Shields</h1>
 	<p>During a battle in 525 BC, the Persians displayed one of the first examples of psychological warfare , using cats and other animals deemed 'sacred' by Egyptians refused to fire any arrows, in fear they'd harm the cats , resulting in the Persian army easily storming the land</p>
+</div>       
+ { % for the post in the posts %}
+<div> <p> published : {{ post.published_date }} </p>
+      <h2><a=href ="">{{ post.title}}</a></h2>
+      <p> {{ post.text | linebreaksbr }} </p>
+</div>
+       { % endfor % }
 </head>
 <body>
 
