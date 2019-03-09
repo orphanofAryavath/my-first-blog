@@ -1,5 +1,5 @@
 ### my-first-blog<br>
-This is my first blog which is about wierd facts of the world  
+This is my first blog which is about wierd facts of the world  http://himanshuv110.pythonanywhere.com/
 I created it with the help of https://tutorial.djangogirls.org<br>
 ### installation<br>
 --PYTHON--<br>
